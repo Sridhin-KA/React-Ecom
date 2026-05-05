@@ -11,6 +11,7 @@ import { BrowserRouter , Routes, Route, Link} from 'react-router-dom'
 import AdminProduct from './pages/AdminProduct'
 import UserProducts from './pages/UserProducts'
 import Cart from './pages/Cart'
+import Checkout from './pages/Checkout'
 function App() {
     const role = localStorage.getItem('Role')
     return (
@@ -27,6 +28,7 @@ function App() {
             <Route path='/adminproduct' element={<AdminProduct/>}/>
             <Route path='/userproducts' element={<UserProducts/>}/>
             <Route path='/usercart' element={<Cart/>}/>
+            <Route path='/checkout' element={<Checkout/>}/>
            </Routes>
            </BrowserRouter>
         </div>

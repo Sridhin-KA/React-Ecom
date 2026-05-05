@@ -1,4 +1,5 @@
 import { useState,useEffect } from "react";
+import {Navigate,Link} from 'react-router-dom'
 
 function Cart() {
 const [cart,setCart] = useState([])
@@ -38,6 +39,7 @@ return(
             )}
 
             <h3>Total Amount: {total}</h3>
+            <Link to="/checkout"><button>Proceed to Checkout</button></Link>
 
     </div>
 )
